@@ -17,4 +17,41 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     margin: 50px;
+    gap: 50px;
+}
+
+.list-container{
+    background-color: #EBF5FB;
+}
+.user-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center
+}
+.user-img img{
+    width: 70px;
+    border-radius: 35px;
+}
+.user-details{
+    margin-left: 10px;
+}
+.user-details h2{
+    margin-bottom: 0;
+}
+.user-details p{
+    margin: 0;
+}
+
+@media screen and (max-width: 990px) {
+    .tasks-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import './Task.css';
 
-const Task = (props) => {
-    const {img, name, age, time} = props.activity;
+const Task = ({activity, addToListHandler}) => {
+    const {img, name, age, time} = activity;
     return (
         <div className='task-card'>
             <img src={img} alt="" />
@@ -12,7 +12,7 @@ const Task = (props) => {
                 <h4>Age: {age}</h4>
                 <h4>Time required: {time}m</h4>
             </div>
-            <button onClick={() => props.addToListHandler(props.activity)} className='card-btn'>Add to list</button>
+            <button onClick={() => addToListHandler(activity)} className='card-btn'>Add to list</button>
         </div>
     );
 };

@@ -2,7 +2,6 @@
     width: 320px;
     height: 500px;
     box-shadow: 0 2px 4px 0 gray, 0 4px 16px 0 gray;
-    margin-bottom: 50px;
     border-radius: 20px;
     position: relative;
 }
