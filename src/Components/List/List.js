@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { addToDb, getStoredList } from '../../utilities/fakedb';
 import './List.css';
 
+
+
+
+
 const List = (props) => {
     const {list} = props;
     

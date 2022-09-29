@@ -15,7 +15,7 @@ const Questions = () => {
             <p>Ans: Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components. The this.setState property is used to update the state values in the component.</p>
         </div>
         <div className='question-ans'>
-            <h3>How does react work?</h3>
+            <h3>What is useeffect used for other than data load?</h3>
             <p>Ans: Running once on mount: fetch API data
             Running on state change: validating input field
             Running on state change: live filtering
