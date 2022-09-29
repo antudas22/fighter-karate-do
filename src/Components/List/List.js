@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './List.css';
 
 const List = (props) => {
@@ -8,6 +8,15 @@ const List = (props) => {
     for(const item of list){
         totalTime = totalTime + item.time;
     }
+
+    const [time, setTime] = useState([]);
+
+    const breakHandler = (props) => {
+        const newTime = props;
+        setTime(newTime);
+
+    }
+
     return (
         <div className='list'>
             <div className="user-info">
@@ -28,16 +37,16 @@ const List = (props) => {
                 <div>
                     <h3>Time Break</h3>
                     <div className='time-break'>
-                        <button>1m</button>
-                        <button>3m</button>
-                        <button>5m</button>
-                        <button>10m</button>
+                        <button onClick={() => breakHandler(1)}>1m</button>
+                        <button onClick={() => breakHandler(3)}>3m</button>
+                        <button onClick={() => breakHandler(5)}>5m</button>
+                        <button onClick={() => breakHandler(10)}>10m</button>
                     </div>
                 </div>
 
                 <h3>Exercise Details</h3>
                 <p className='time'>Exercise Time: {totalTime} Minutes</p>
-                <p className='break'>Break Time:</p>
+                <p className='break'>Break Time: {time} Minutes</p>
 
                 <button className='completed-btn'>Activity Completed</button>
         </div>
