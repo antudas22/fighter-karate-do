@@ -12,7 +12,7 @@ const Task = (props) => {
                 <h4>Age: {age}</h4>
                 <h4>Time required: {time}m</h4>
             </div>
-            <button className='card-btn'>Add to list</button>
+            <button onClick={() => props.addToListHandler(props.activity)} className='card-btn'>Add to list</button>
         </div>
     );
 };

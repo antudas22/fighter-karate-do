@@ -9,6 +9,11 @@ const Activities = () => {
         .then(res => res.json())
         .then(data => setActivities(data))
     }, []);
+
+    const addToListHandler = (activity) => {
+        console.log(activity)
+    }
+
     return (
         <div className='home'>
             <div className="activity-container">
@@ -21,6 +26,7 @@ const Activities = () => {
                         activities.map(activity => <Task 
                             key={activity.id}
                             activity = {activity}
+                            addToListHandler = {addToListHandler}
                         ></Task>)
                     }
                 </div>
