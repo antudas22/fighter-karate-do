@@ -23,24 +23,7 @@
 .list-container{
     background-color: #EBF5FB;
 }
-.user-info{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center
-}
-.user-img img{
-    width: 70px;
-    border-radius: 35px;
-}
-.user-details{
-    margin-left: 10px;
-}
-.user-details h2{
-    margin-bottom: 0;
-}
-.user-details p{
-    margin: 0;
-}
+
 
 @media screen and (max-width: 990px) {
     .tasks-container{

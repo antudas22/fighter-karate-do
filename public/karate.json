@@ -4,7 +4,7 @@
       "name": "Regular Exercise",
       "img": "https://www.hidrocalidodigital.com/wp-content/uploads/2022/07/foto-3.jpg",
       "age": "7-70",
-      "time": 10
+      "time": 20
     },
     {
       "id": "2",
@@ -32,13 +32,13 @@
       "name": "Kumite",
       "img": "https://thumbs.dreamstime.com/b/karate-fight-2652899.jpg",
       "age": "7-55",
-      "time": 10
+      "time": 30
     },
     {
       "id": "6",
       "name": "Kata",
       "img": "https://img.olympicchannel.com/images/image/private/t_16-9_3200/primary/crf29zj3vasbaf02kchf",
       "age": "7-60",
-      "time": 10
+      "time": 40
     }
   ]
