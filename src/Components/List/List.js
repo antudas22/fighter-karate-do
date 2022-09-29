@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { addToDb, getStoredList } from '../../utilities/fakedb';
 import './List.css';
 
 const List = (props) => {
@@ -9,12 +10,19 @@ const List = (props) => {
         totalTime = totalTime + item.time;
     }
 
-    const [time, setTime] = useState([]);
+    // useEffect( () => {
+    //     const storedList = getStoredList();
+    //     for(const id in storedList){
+    //         time.push(id);
+    //     }
+    // }, [])
 
+    const [time, setTime] = useState([]);
     const breakHandler = (props) => {
         const newTime = props;
         setTime(newTime);
-
+        // addToDb(newTime);
+        localStorage.setItem('minute', JSON.stringify(newTime));
     }
 
     return (

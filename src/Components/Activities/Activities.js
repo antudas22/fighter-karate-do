@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Task from '../Task/Task';
 import './Activities.css';
 import List from '../List/List';
+import Questions from '../Questions/Questions';
 
 const Activities = () => {
     const [activities, setActivities] = useState([]);
@@ -44,6 +45,7 @@ const Activities = () => {
                     list={list}
                 ></List>
             </div>
+            <Questions></Questions>
         </div>
     );
 };
